@@ -1,0 +1,112 @@
+.dashboard {
+    background-color: #F5F5F5;
+    display: flex;
+
+    .left {
+        width: 280px;
+        height: 944px;
+        background-color: #000000;
+        border-radius: 30px;
+        color: #FFFFFF;
+        font-family: Montserrat;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            // justify-content: center;
+
+            ul {
+                list-style: none;
+            }
+        }
+
+    }
+
+    .right {
+        margin-left: 60px;
+        width: 1000px;
+        margin-top: 60px;
+
+        .header {
+
+            height: 30px;
+
+            // border: 1px solid black;
+
+            h3 {
+                width: 138px;
+                height: 29px; // top: 60px
+                margin-left: 0px;
+                margin-top: 0px;
+                font-family: Monserrat;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+
+
+            }
+        }
+
+        .stats {
+
+            // border: 1px solid black;
+            display: flex;
+            gap: 40px;
+
+            .item {
+                width: 220px;
+                height: 120px;
+                border-radius: 15px;
+                margin-top: 40px;
+
+            }
+
+            .card1 {
+                background-color: #DDEFE0;
+            }
+
+            .card2 {
+                background-color: #F4ECDD;
+            }
+
+            .card3 {
+                background-color: #EFDADA;
+            }
+
+            .card4 {
+                background-color: #DEE0EF;
+            }
+        }
+
+        .chart {
+            // border: 1px solid blue;
+            height: 360px;
+            margin-top: 40px;
+            background-color: #FFFFFF;
+
+        }
+
+        .topProds {
+            // border: 1px solid rgb(11, 11, 22);
+            margin-top: 30px;
+            height: 260px;
+            display: flex;
+            gap: 40px;
+
+            .section1 {
+                width: 480px;
+                background-color: #FFFFFF;
+
+            }
+
+            .section2 {
+                width: 480px;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
