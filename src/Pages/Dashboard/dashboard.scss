@@ -16,11 +16,64 @@
         .top {
             display: flex;
             flex-direction: column;
-            margin-top: 60px;
+            // margin-top: 20px;
+
             // justify-content: center;
+            h2 {
+                font-weight: 700;
+                font-size: 36px;
+                color: #FFFFFF;
+                margin-left: 50px;
+                margin-top: 60px;
+                width: 123px;
+                height: 44px;
+            }
 
             ul {
                 list-style: none;
+
+                margin-top: 15px;
+
+                li {
+                    display: flex;
+                    margin-top: 15px;
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                        color: #FFFFFF;
+                        margin-top: 2px;
+
+                    }
+
+                    h4 {
+                        margin-top: 0;
+                        margin-left: 10px;
+
+                        height: 22px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 350px;
+
+            span {
+                font-family: Monserrat;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                margin-top: 15px;
             }
         }
 
@@ -31,25 +84,7 @@
         width: 1000px;
         margin-top: 60px;
 
-        .header {
 
-            height: 30px;
-
-            // border: 1px solid black;
-
-            h3 {
-                width: 138px;
-                height: 29px; // top: 60px
-                margin-left: 0px;
-                margin-top: 0px;
-                font-family: Monserrat;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 30px;
-
-
-            }
-        }
 
         .stats {
 
@@ -67,6 +102,8 @@
 
             .card1 {
                 background-color: #DDEFE0;
+
+
             }
 
             .card2 {
@@ -80,6 +117,32 @@
             .card4 {
                 background-color: #DEE0EF;
             }
+
+
+
+            .heading {
+
+                // margin-top: 5px;
+                margin-left: 25px;
+
+                color: #000000;
+                font-family: Lato;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16.8px;
+            }
+
+            span {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32.68px;
+                margin-top: 5px;
+                margin-left: 25px;
+            }
+
+
+
         }
 
         .chart {
