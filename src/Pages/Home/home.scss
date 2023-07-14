@@ -3,7 +3,7 @@
     display: flex;
 
     .left {
-        width: 588px;
+        width: 40%;
         height: 100vh;
         background-color: #000;
         display: flex;
@@ -17,37 +17,41 @@
             font-weight: 700;
             font-size: 72px;
             line-height: 87px;
+            cursor: pointer;
+
+        }
+
+        h1:hover {
+            color: #ddd9d9;
+            transition: 200ms;
+            transform: scale(1.005);
 
         }
     }
 
     .right {
-        // width: 852px;
-        height: 100vh;
         background-color: #F5F5F5;
+        width: 60%;
+        height: 100vh;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 244px;
 
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 43.88px;
-
+        .login {
+            background-color: #e9e2e2;
+            height: 180px;
+            width: 400px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 260px;
+            margin-top: 320px;
+            cursor: pointer;
         }
 
-        span {
-            font-family: Lato;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
+        .login:hover {
+            background-color: #ddd9d9;
+            transition: 200ms;
+            transform: scale(1.005);
 
         }
-
     }
 }

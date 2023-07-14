@@ -27,6 +27,14 @@
                 margin-top: 60px;
                 width: 123px;
                 height: 44px;
+                cursor: pointer;
+            }
+
+            h2:hover {
+                color: #ddd9d9;
+                transition: 200ms;
+                transform: scale(1.005);
+
             }
 
             ul {
@@ -37,6 +45,8 @@
                 li {
                     display: flex;
                     margin-top: 15px;
+
+                    cursor: pointer;
 
                     img {
                         width: 18px;
@@ -56,7 +66,28 @@
                         line-height: 22px;
                     }
                 }
+
+                li:hover {
+                    color: rgb(183, 179, 179);
+                }
+
+
+
             }
+
+            ul li:first-child img {
+                font-weight: 700;
+            }
+
+            ul li:first-child h4 {
+                font-weight: 700;
+            }
+
+            ul li:first-child:hover {
+                color: #ffffff;
+            }
+
+
 
 
         }
@@ -66,6 +97,7 @@
             flex-direction: column;
             margin-left: 50px;
             margin-top: 350px;
+            cursor: pointer;
 
             span {
                 font-family: Monserrat;
@@ -97,6 +129,7 @@
                 height: 120px;
                 border-radius: 15px;
                 margin-top: 40px;
+                cursor: pointer;
 
             }
 
@@ -150,6 +183,7 @@
             height: 360px;
             margin-top: 40px;
             background-color: #FFFFFF;
+            border-radius: 20px;
 
         }
 
@@ -163,12 +197,15 @@
             .section1 {
                 width: 480px;
                 background-color: #FFFFFF;
-
+                border-radius: 20px;
+                cursor: pointer;
             }
 
             .section2 {
                 width: 480px;
                 background-color: #FFFFFF;
+                border-radius: 20px;
+                cursor: pointer;
             }
         }
     }

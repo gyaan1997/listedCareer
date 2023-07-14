@@ -8,7 +8,6 @@ import Header from '../../Components/Header'
 import Revenue from "../../Images/revenue.png"
 import Transaction from "../../Images/transaction.png"
 import Transactions from "../../Images/transactions.png"
-
 import Like from "../../Images/like.png"
 import User from "../../Images/user.png"
 import Dash from "../../Images/Dashboard.png"
@@ -23,7 +22,7 @@ function Dashboard() {
                 <div className="top">
                     <h2>Board.</h2>
                     <ul className='items'>
-                        <li>
+                        <li className='active'>
 
                             <img src={Dash} alt="dash"></img>
                             <h4>Dashboard</h4>
