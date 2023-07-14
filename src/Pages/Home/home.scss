@@ -54,3 +54,25 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            height: auto;
+        }
+
+        .right {
+            width: 100%;
+            height: auto;
+
+            .login {
+                margin: 20px;
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+    }
+}
