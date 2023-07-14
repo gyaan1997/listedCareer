@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from '../Images/search.png'
 import Notification from '../Images/notification.png'
 import Account from '../Images/account.png'
+import { useAuth0 } from "@auth0/auth0-react";
+
 const Header = () => {
+
+    const [showDropdown, setShowDropdown] = useState(false);
+
+    const handleToggleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    };
+
+    // const handleLogout = () => {
+    //     // Perform logout logic here
+    //     console.log('Logout clicked');
+    // };
+    const { logout } = useAuth0();
     return (
         <header style={{ display: "flex", alignItems: "center", height: "30px" }}>
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -16,7 +30,54 @@ const Header = () => {
                     </img></div>
                 <img style={{ width: "18px", height: "20px", color: "#000000", marginLeft: "40px", cursor: "pointer" }} src={Notification} alt="notification"></img>
 
-                <img style={{ width: "30px", height: "px", marginLeft: "30px", cursor: "pointer" }} src={Account} alt="account"></img>
+                <div
+                    style={{
+                        position: 'relative',
+                        display: 'inline-block',
+                        cursor: 'pointer',
+                    }}
+                >
+                    <img
+                        style={{
+                            width: '30px',
+                            height: '30px',
+                            marginLeft: '30px',
+                            cursor: 'pointer',
+                        }}
+                        src={Account}
+                        alt="account"
+                        onClick={handleToggleDropdown}
+                    />
+
+                    {showDropdown && (
+                        <div
+                            style={{
+                                position: 'absolute',
+                                top: '25px',
+
+                                right: 0,
+                                // background: '#fff',
+                                // border: '1px solid #ccc',
+                                borderRadius: '5px',
+                                padding: '10px',
+                                zIndex: 1,
+                                fontFamily: 'Monserrat, sans-serif',
+                                fontSize: '14px',
+                            }}
+                        >
+                            <button
+                                style={{
+                                    margin: '5px 0',
+                                    borderRadius: '4px',
+                                    padding: '8px 12px',
+                                    height: "30px",
+                                    width: "100px",
+                                    cursor: 'pointer'
+                                }}
+                                onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Log out</button>
+                        </div>
+                    )}
+                </div>
             </div>
 
 
