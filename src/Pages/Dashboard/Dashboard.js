@@ -63,7 +63,7 @@ function Dashboard() {
                                 height: "24px",
                                 marginTop: "20px",
                                 color: "#000",
-                                marginLeft: "170px"
+                                marginLeft: "210px"
                             }} src={Revenue} alt="Revenue"></img>
                         </div>
                         <div className='heading'>Total Revenues</div>
@@ -79,7 +79,7 @@ function Dashboard() {
                                 height: "24px",
                                 marginTop: "20px",
                                 color: "#000",
-                                marginLeft: "170px"
+                                marginLeft: "210px"
                             }} src={Transaction} alt="Revenue"></img>
                         </div>
                         <div className='heading'>Total Transactions</div>
@@ -94,7 +94,7 @@ function Dashboard() {
                                 height: "24px",
                                 marginTop: "20px",
                                 color: "#000",
-                                marginLeft: "170px"
+                                marginLeft: "210px"
                             }} src={Like} alt="Revenue"></img>
                         </div>
                         <div className='heading'>Total Likes</div>
@@ -109,7 +109,7 @@ function Dashboard() {
                                 height: "24px",
                                 marginTop: "20px",
                                 color: "#000",
-                                marginLeft: "160px"
+                                marginLeft: "200px"
                             }} src={User} alt="Revenue"></img>
                         </div>
                         <div className='heading'>Total Users</div>
@@ -121,7 +121,7 @@ function Dashboard() {
                 <div className="chart">
                     <Activities />
                 </div>
-                <div className="topProds">
+                <div className="topProdsSchedule">
                     <div className="section1">
                         <TopProducts />
                     </div>

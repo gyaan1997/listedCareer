@@ -29,6 +29,7 @@
         }
     }
 
+
     .right {
         background-color: #F5F5F5;
         width: 60%;
@@ -67,11 +68,16 @@
         .right {
             width: 100%;
             height: auto;
+            align-items: center;
+            justify-content: center;
 
             .login {
                 margin: 20px;
                 width: 90%;
                 max-width: 400px;
+                background-color: #F5F5F5;
+
+
             }
         }
     }
